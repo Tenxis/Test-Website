@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <title>title</title>
-</head>
-<body>
-    <h1>Tenxis, Hello world!</h1>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>test-survey</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">help us improve the platform</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">name: <input required type="text" id="name" placeholder="enter your name here" /></label>
+      <label for="email" id="email-label">email: <input required type="email" id="email" placeholder="enter your email here" /></label>
+      <label for="number" id="number-label">number: <input type="number" placeholder="enter your number here" id="number" min="15" max="120" /></label>
+      <select id="dropdown">
+        <option>opt 1</option>
+        <option>opt 2</option>
+      </select>
+      <label><input type="radio" name="radio" value="rad1" /> rad 1</label>
+      <label><input type="radio" name="radio" value="rad2" /> rad 2</label>
+      <label><input type="radio" name="radio" value="rad3" /> rad 3</label>
+
+      <label><input type="checkbox" name="checkbox" value="chk1" /> chk 1</label>
+      <label><input type="checkbox" name="checkbox" value="chk2" /> chk 2</label>
+      <label><input type="checkbox" name="checkbox" value="chk3" /> chk 3</label>
+      <textarea></textarea>
+      <input type="submit" id="submit" />
+    </form>
+  </body>
 </html>
